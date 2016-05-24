@@ -1,4 +1,9 @@
 
-### Java ###
+### Vendor ###
+
 vendor/
 
+
+
+### node_modules ###
+node_modules/
