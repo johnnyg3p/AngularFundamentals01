@@ -52,7 +52,7 @@ angular.module('Eggly',[
       title:'',
       url:'',
       category:$scope.currentCategory
-    }
+    };
   }
 
   function createBookmark(bookmark){
@@ -66,10 +66,9 @@ angular.module('Eggly',[
   }
 
   function updateBookmark(bookmark){
-    debugger;
     var index = _.findIndex($scope.bookmarks, function(b){
-      return b.id == bookmark.id
-    })
+      return b.id == bookmark.id;
+    });
     $scope.bookmarks[index] = bookmark;
     $scope.editedBookmark = false;
     $scope.isEditing = false;
@@ -84,7 +83,7 @@ angular.module('Eggly',[
   function deleteBookmark(bookmark){
     _.remove($scope.bookmarks, function(b){
       return  b.id ==bookmark.id;
-    })
+    });
   }
 
   $scope.setEditingBookmark = setEditingBookmark;
